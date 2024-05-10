@@ -40,7 +40,7 @@
 		080EC0924FCD03684A6B9792 /* Pods_HGCommonKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HGCommonKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25680DF67031752DED079734 /* Pods_HGCommonKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HGCommonKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D11F72F55CF157C62BE3ED /* Pods-HGCommonKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGCommonKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HGCommonKit_Tests/Pods-HGCommonKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		495C4935E52AD78C0BECD6CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		495C4935E52AD78C0BECD6CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HGCommonKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HGCommonKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,8 +63,8 @@
 		6A914AF05D20884B285B9D3C /* Pods-HGCommonKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGCommonKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-HGCommonKit_Tests/Pods-HGCommonKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9ADF2703BBC030570529F2FA /* HGCommonKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HGCommonKit.podspec; path = ../HGCommonKit.podspec; sourceTree = "<group>"; };
-		A218395E0D18729F795045D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9ADF2703BBC030570529F2FA /* HGCommonKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HGCommonKit.podspec; path = ../HGCommonKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A218395E0D18729F795045D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C575C1017D1E9ACB8124882D /* Pods-HGCommonKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGCommonKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-HGCommonKit_Example/Pods-HGCommonKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D679868D8A827F5566CA1AAF /* Pods-HGCommonKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGCommonKit_Example.release.xcconfig"; path = "Target Support Files/Pods-HGCommonKit_Example/Pods-HGCommonKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				41D11F72F55CF157C62BE3ED /* Pods-HGCommonKit_Tests.debug.xcconfig */,
 				6A914AF05D20884B285B9D3C /* Pods-HGCommonKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

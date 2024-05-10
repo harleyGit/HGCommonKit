@@ -28,9 +28,17 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/harleyGit/HGCommonKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'HGCommonKit/Classes/**/*'
+  
+  s.prefix_header_contents = '
+  # if __has_include(<HGCommonKit/HGCommonKit-Swift.h>)
+      #import <HGCommonKit/HGCommonKit-Swift.h>
+  #else
+      #import "HGCommonKit-Swift.h"
+  #endif
+  '
   
   # s.resource_bundles = {
   #   'HGCommonKit' => ['HGCommonKit/Assets/*.png']

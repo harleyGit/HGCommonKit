@@ -7,6 +7,9 @@
 //
 
 #import "HGViewController.h"
+#import <HGCommonKit-umbrella.h>
+#import <HGCommonKit/HGCommonKit-Swift.h>
+
 
 @interface HGViewController ()
 
@@ -18,6 +21,28 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //直接使用OC
+    OCTest *octest = [OCTest new];
+    octest.userId = 10089;
+    octest.name = @"asdga";
+    [octest printInfo];
+    
+    //简接使用Swift： oc-》swift
+    SwiftUseOC *useOC = [SwiftUseOC new];
+    [useOC printInfo];
+    
+    
+    //直接使用Swift
+    SwiftTest *swiftTest = [SwiftTest new];
+    swiftTest.userId = 1008900000;
+    swiftTest.name = @"swiftTest";
+    [swiftTest printInfo];
+    
+    
+    //简接使用OC: Swift->OC
+    OCUseSwift *useSwift = [OCUseSwift new];
+    [useSwift printInfo];
 }
 
 - (void)didReceiveMemoryWarning
